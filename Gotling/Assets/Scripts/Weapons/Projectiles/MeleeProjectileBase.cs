@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeWeaponBehaviour : MonoBehaviour
+public abstract class MeleeProjectileBase : MonoBehaviour
 {
     public WeaponScriptableObject weaponData;
     public float destroyAfterSeconds;
@@ -20,11 +20,13 @@ public class MeleeWeaponBehaviour : MonoBehaviour
         currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce = weaponData.Pierce;
     }
+
     // Update is called once per frame
     protected virtual void Start()
     {
         Destroy(gameObject, destroyAfterSeconds);
     }
+
     protected virtual void OnTriggerEnter2D(Collider2D col)
     { 
         if (col.CompareTag("Enemy"))

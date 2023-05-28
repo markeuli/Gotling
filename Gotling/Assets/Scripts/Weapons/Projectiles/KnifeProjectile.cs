@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KnifeBehaviour : ProjectileWeaponBehaviour
+public class KnifeProjectile : RangedProjectileBase
 {
     // Start is called before the first frame update
     

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileWeaponBehaviour : MonoBehaviour
+public abstract class RangedProjectileBase : MonoBehaviour
 {
     public WeaponScriptableObject weaponData;
     protected Vector3 direction;
@@ -27,7 +27,6 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
         Destroy(gameObject, destroyAfterSeconds);
     }
 
-    // Update is called once per frame
     public void DirectionChecker(Vector3 dir)
     {
         direction = dir;

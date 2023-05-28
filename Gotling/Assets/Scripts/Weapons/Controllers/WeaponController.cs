@@ -5,8 +5,6 @@ using UnityEngine;
 public class WeaponController : MonoBehaviour
 
 {
-
-   
     public WeaponScriptableObject weaponData;
    
     float currentCooldown;
@@ -28,6 +26,8 @@ public class WeaponController : MonoBehaviour
             Attack();
         }
     }
+
+    // Put the attack on cooldown
     protected virtual void Attack()
     {
         currentCooldown = weaponData.CooldownDuration;
