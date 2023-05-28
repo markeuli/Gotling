@@ -115,7 +115,7 @@ TextureImporter:
         width: 31
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +136,7 @@ TextureImporter:
         width: 31
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +157,7 @@ TextureImporter:
         width: 31
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 32
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: robin-1_4
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
-        width: 31
+        width: 32
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: robin-1_5
       rect:
         serializedVersion: 2
-        x: 224
+        x: 160
         y: 0
         width: 31
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,15 +233,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robin-1_6
+      name: robin-1_9
       rect:
         serializedVersion: 2
-        x: 256
+        x: 288
         y: 0
-        width: 31
-        height: 42
+        width: 32
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: robin-1_7
       rect:
         serializedVersion: 2
-        x: 288
+        x: 224
         y: 0
-        width: 32
-        height: 41
+        width: 31
+        height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: robin-1_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 0
-        width: 30
-        height: 40
+        width: 31
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,36 +296,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robin-1_9
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 0
-        width: 30
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89fe601167b64eb42be03f62ccf9b9fb
-      internalID: -604874184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: robin-1_10
       rect:
         serializedVersion: 2
-        x: 448
+        x: 320
         y: 0
         width: 32
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,21 +317,42 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robin-1_11
+      name: robin-1_6
       rect:
         serializedVersion: 2
-        x: 480
+        x: 192
         y: 0
-        width: 32
-        height: 40
+        width: 31
+        height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 694912f385e832a4d86da24b20dee8e0
+      spriteID: e178acc7f0f8c1649b265ad37445a247
+      internalID: 1040590875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robin-1_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e788dc1bbf987d4285a974235d46b49
       internalID: 225339173
       vertices: []
       indices: 
@@ -362,18 +362,18 @@ TextureImporter:
       name: robin-1_12
       rect:
         serializedVersion: 2
-        x: 128
+        x: 384
         y: 0
-        width: 32
-        height: 37
+        width: 30
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8773a3cd429881244af8088edf6e84e9
+      spriteID: b242bcfb95edef54fb6ec5a570f2d303
       internalID: -1038392203
       vertices: []
       indices: 
@@ -383,19 +383,19 @@ TextureImporter:
       name: robin-1_13
       rect:
         serializedVersion: 2
-        x: 160
+        x: 416
         y: 0
-        width: 32
-        height: 37
+        width: 30
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06e60453737d2cc4ebe0bd4ed3c8377f
-      internalID: 485842540
+      spriteID: e6f88c6d826d01f4db6bb228201ce559
+      internalID: -604874184
       vertices: []
       indices: 
       edges: []
@@ -404,18 +404,18 @@ TextureImporter:
       name: robin-1_14
       rect:
         serializedVersion: 2
-        x: 320
+        x: 448
         y: 0
         width: 32
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d086d647eaec219438fb0ab422d9d835
+      spriteID: 0566bc69118b75d4ebc304726e6d9f7d
       internalID: -1516199974
       vertices: []
       indices: 
@@ -425,18 +425,18 @@ TextureImporter:
       name: robin-1_15
       rect:
         serializedVersion: 2
-        x: 352
+        x: 480
         y: 0
-        width: 32
-        height: 41
+        width: 31
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6949be5f52aaf1408a5b31b96bfa8b8
+      spriteID: 3a1932a9030246a49a290cb6aa98b86b
       internalID: -232473940
       vertices: []
       indices: 
@@ -458,8 +458,8 @@ TextureImporter:
       robin-1_8: 1869204944
       robin-1_1: 1800613919
       robin-1_11: 225339173
-      robin-1_9: -604874184
-      robin-1_6: -1615341147
+      robin-1_9: -1615341147
+      robin-1_6: 1040590875
       robin-1_12: -1038392203
       robin-1_5: 1134079827
       robin-1_10: -1180433470
@@ -468,7 +468,7 @@ TextureImporter:
       robin-1_0: -917899427
       robin-1_7: 1413190322
       robin-1_2: -824955660
-      robin-1_13: 485842540
+      robin-1_13: -604874184
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
