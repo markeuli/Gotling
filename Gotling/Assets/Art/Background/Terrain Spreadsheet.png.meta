@@ -115,7 +115,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +136,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +157,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,6 +228,153 @@ TextureImporter:
       bones: []
       spriteID: 92e56d466011f3b469d7daa9cb537510
       internalID: -1369088559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_6
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 101
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c486ba8844879546a0fdbb3b8c9cc1d
+      internalID: 744816124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_7
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 97
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bcd47826db8a04ca1944ee0ff8b9ff
+      internalID: 1250956157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_8
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156ddd6c458116341969da866a1aa4a5
+      internalID: -1658208654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 63
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dabe4973bbd9640a567b6554d89f1c
+      internalID: -829926022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 2
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782172c86c29b0345867ffc0644f3609
+      internalID: -1851680630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_11
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 36
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ba4180f61eaad49aa8fdce3742e2db
+      internalID: 1949718667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain Spreadsheet_12
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 131
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f268e60d928b84bb467235253c435f
+      internalID: -501475186
       vertices: []
       indices: 
       edges: []
@@ -244,9 +391,16 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Terrain Spreadsheet_2: -980617379
+      Terrain Spreadsheet_9: -829926022
+      Terrain Spreadsheet_7: 1250956157
+      Terrain Spreadsheet_11: 1949718667
       Terrain Spreadsheet_0: -1962395735
       Terrain Spreadsheet_1: 756280059
+      Terrain Spreadsheet_10: -1851680630
       Terrain Spreadsheet_4: -496295094
+      Terrain Spreadsheet_12: -501475186
+      Terrain Spreadsheet_6: 744816124
+      Terrain Spreadsheet_8: -1658208654
       Terrain Spreadsheet_3: -43070666
       Terrain Spreadsheet_5: -1369088559
   spritePackingTag: 
