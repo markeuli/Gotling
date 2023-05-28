@@ -123,6 +123,77 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &336703909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.155158
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6187288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770416226967072934, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038765311810056849, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_Name
+      value: Zard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854086296702665929, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854086296702665929, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_Size.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854086296702665929, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,8 +293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 100
-  m_RefResolutionX: 320
-  m_RefResolutionY: 180
+  m_RefResolutionX: 640
+  m_RefResolutionY: 360
   m_UpscaleRT: 0
   m_PixelSnapping: 1
   m_CropFrameX: 0
@@ -284,14 +355,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96875, y: 1.1875}
     newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 1, y: 1.2}
   m_EdgeRadius: 0
 --- !u!50 &648319553
 Rigidbody2D:
@@ -375,7 +446,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fb2f59a145074c2479b58c14ed0276f1, type: 3}
+  m_Sprite: {fileID: -917899427, guid: 658d5880146b9b343a6261790fbbac68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -429,7 +500,7 @@ MonoBehaviour:
   experience: 0
   level: 1
   experienceCap: 0
-  invincibilityDuration: 0
+  invincibilityDuration: 0.5
   levelRanges:
   - startLevel: 1
     endLevel: 3

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41895cbe70e5e0b45acf0227d3954505, type: 3}
-  m_Name: Zard
+  m_Name: Robin
   m_EditorClassIdentifier: 
   startingWeapon: {fileID: 0}
   maxHealth: 100
