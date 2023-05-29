@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 82281865049850700}
   - component: {fileID: 82281865049850701}
   m_Layer: 0
-  m_Name: FireballController
+  m_Name: FireballWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26291e65d03a6824f862835e20a995e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 10751e99e90817245ac32588f10c6d32, type: 2}
+  weaponData: {fileID: 11400000, guid: 1b609efdfbce3f542924829dd0e107ed, type: 2}

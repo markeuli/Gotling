@@ -8,10 +8,13 @@ public class CameraMovement : MonoBehaviour
     public Transform target;
     public Vector3 offset;
 
+	private void Start()
+	{
+		target = FindObjectOfType<PlayerController>()?.transform;
+	}
 
-
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         transform.position = target.position + offset;
     }

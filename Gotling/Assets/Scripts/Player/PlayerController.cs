@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 	private PlayerMovement movement;
-	public WeaponController primaryWeapon;
+	public PlayerWeaponManager weapons;
 
 	private void Start()
 	{
 		movement = GetComponent<PlayerMovement>();
+		weapons = GetComponent<PlayerWeaponManager>();
 	}
 
 	private void Update()
@@ -25,9 +26,18 @@ public class PlayerController : MonoBehaviour
 		// Fire weapon if hit
 		if (fire1)
 		{
-			if (primaryWeapon != null)
+			if (weapons.primary != null)
 			{
-				primaryWeapon.Attack(mousePosition);
+				weapons.primary.Attack(mousePosition);
+			}
+		}
+
+		// Fire weapon if hit
+		if (fire2)
+		{
+			if (weapons.secondary != null)
+			{
+				weapons.secondary.Attack(mousePosition);
 			}
 		}
 	}
