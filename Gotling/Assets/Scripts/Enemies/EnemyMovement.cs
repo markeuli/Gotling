@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public EnemyScriptableObject enemyData;
     private Transform player;
     private Rigidbody2D body;
+    public bool isMoving { get; private set; }
 
     public float range = 0.5f;
 
@@ -22,11 +23,13 @@ public class EnemyMovement : MonoBehaviour
         float distance = Vector2.Distance(player.position, body.position);
         if (distance <= range)
         {
+            isMoving = false;
         } else if (distance + enemyData.MoveSpeed * Time.fixedDeltaTime <= range) {
             body.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, distance - range));
         } else
         {
             body.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, enemyData.MoveSpeed * Time.fixedDeltaTime));
+            isMoving = true;
         }
     }
 }
