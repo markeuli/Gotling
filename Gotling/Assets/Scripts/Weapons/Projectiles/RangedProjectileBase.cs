@@ -14,6 +14,8 @@ public abstract class RangedProjectileBase : MonoBehaviour
     protected float currentCooldownDuration;
     protected int currentPierce;
 
+    protected Rigidbody2D body;
+
     void Awake()
     {
         currentDamage = weaponData.Damage;
@@ -27,9 +29,11 @@ public abstract class RangedProjectileBase : MonoBehaviour
         Destroy(gameObject, destroyAfterSeconds);
     }
 
-    public void DirectionChecker(Vector3 dir)
+    public void SetupProjectile(Vector3 dir)
     {
         direction = dir;
+        body = GetComponent<Rigidbody2D>();
+        body.velocity = direction * weaponData.Speed;
 
         float dirx = direction.x;
         float diry = direction.y;

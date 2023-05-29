@@ -30,12 +30,25 @@ public class EnemyStats : MonoBehaviour
 
     public void Kill()
     {
-        Destroy(gameObject); 
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        DamagePlayer(col.gameObject);
     }
 
     private void OnCollisionStay2D(Collision2D col)
     {
-        PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
-        player.TakeDamage(currentDamage);
+        DamagePlayer(col.gameObject);
+    }
+
+    private void DamagePlayer(GameObject gameObject)
+    {
+        PlayerStats player = gameObject.GetComponent<PlayerStats>();
+        if (player != null)
+        {
+            player.TakeDamage(currentDamage);
+        }
     }
 }

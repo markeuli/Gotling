@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponController : MonoBehaviour
+public abstract class WeaponController : MonoBehaviour
 
 {
     public WeaponScriptableObject weaponData;
