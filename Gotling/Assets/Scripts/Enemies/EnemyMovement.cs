@@ -19,14 +19,14 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 movePos;
         float distance = Vector2.Distance(player.position, body.position);
-        if (distance < range)
+        if (distance <= range)
         {
-            movePos = Vector2.MoveTowards(transform.position, player.transform.position, distance - range);
+        } else if (distance + enemyData.MoveSpeed * Time.fixedDeltaTime <= range) {
+            body.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, distance - range));
         } else
         {
-            Vector2.MoveTowards(transform.position, player.transform.position, enemyData.MoveSpeed * Time.fixedDeltaTime);
+            body.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, enemyData.MoveSpeed * Time.fixedDeltaTime));
         }
     }
 }
