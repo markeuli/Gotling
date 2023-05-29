@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KnifeProjectile : RangedProjectileBase
+public class LinearProjectile : RangedProjectileBase
 {
     // Start is called before the first frame update
     
@@ -14,6 +14,6 @@ public class KnifeProjectile : RangedProjectileBase
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * weaponData.Speed * Time.deltaTime;
+
     }
 }

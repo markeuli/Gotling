@@ -21,7 +21,7 @@ public class PlayerAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (pm.moveDir.x != 0 || pm.moveDir.y != 0)
+        if (pm.isMoving)
         {
             am.SetBool("Move", true);
 
@@ -34,7 +34,7 @@ public class PlayerAnimator : MonoBehaviour
     }
     void SpriteDirectionChecker()
     {
-        if (pm.lastHorizontalVector < 0)
+        if (pm.lastMovedVector.x < 0)
         {
             sr.flipX = true;
         }

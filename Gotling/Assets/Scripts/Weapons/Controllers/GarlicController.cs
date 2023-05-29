@@ -11,11 +11,12 @@ public class GarlicController : WeaponController
     }
 
     // Update is called once per frame
-    protected override void Attack()
+    public override bool Attack(Vector2 playerMouse)
     {
-        base.Attack();
+        base.Attack(playerMouse);
         GameObject spawnedGarlic = Instantiate(weaponData.Prefab);
         spawnedGarlic.transform.position = transform.position;
         spawnedGarlic.transform.parent = transform;
+        return true;
     }
 }
