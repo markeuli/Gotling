@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 648319557}
   - component: {fileID: 648319558}
   - component: {fileID: 648319559}
+  - component: {fileID: 648319561}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -372,9 +373,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648319551}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -533,11 +534,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2032c147a8b8014abba6542b9bab5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastHorizontalVector: 0
-  lastVerticalVector: 0
-  moveDir: {x: 0, y: 0}
-  lastMovedVector: {x: 0, y: 0}
   characterData: {fileID: 11400000, guid: a0b1a6a32477b804b949b9b7c66604ac, type: 2}
+--- !u!114 &648319561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648319551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27c9126d65f76b46b8d70c3107c06c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryWeapon: {fileID: 82281866703303883}
 --- !u!1 &678005480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,6 +2646,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82281865049850701, guid: e27d9abb70edcf24bb186b1ba2b8b0f3, type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b609efdfbce3f542924829dd0e107ed, type: 2}
     - target: {fileID: 82281865049850703, guid: e27d9abb70edcf24bb186b1ba2b8b0f3, type: 3}
       propertyPath: m_Name
       value: FireballController
@@ -2643,3 +2657,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e27d9abb70edcf24bb186b1ba2b8b0f3, type: 3}
+--- !u!114 &82281866703303883 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 82281865049850701, guid: e27d9abb70edcf24bb186b1ba2b8b0f3, type: 3}
+  m_PrefabInstance: {fileID: 82281866703303882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26291e65d03a6824f862835e20a995e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

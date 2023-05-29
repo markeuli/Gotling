@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41895cbe70e5e0b45acf0227d3954505, type: 3}
   m_Name: Robin
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 1604385683651038805, guid: 30117112b80a1b7478bb8e5162d2c060, type: 3}
   maxHealth: 100
   recovery: 1
   moveSpeed: 5
