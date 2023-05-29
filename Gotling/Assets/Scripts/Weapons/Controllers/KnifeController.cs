@@ -10,11 +10,16 @@ public class KnifeController : WeaponController
         base.Start();
     }
 
-    protected override void Attack()
+    public override bool Attack(Vector2 playerMouse)
     {
-        base.Attack();
-        GameObject spawnedKnife = Instantiate(weaponData.Prefab);
-        spawnedKnife.transform.position = transform.position;
-        spawnedKnife.GetComponent<RangedProjectileBase>().DirectionChecker(pm.lastMovedVector);
+        bool result = base.Attack(playerMouse);
+        if (result)
+        {
+            var mouseVector = (playerMouse - (Vector2)transform.position).normalized;
+            GameObject spawnedKnife = Instantiate(weaponData.Prefab);
+            spawnedKnife.transform.position = transform.position;
+            spawnedKnife.GetComponent<RangedProjectileBase>().DirectionChecker(mouseVector);
+        }
+        return result;
     }
 }

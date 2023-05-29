@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 moveDir;
     [HideInInspector]
     public Vector2 lastMovedVector;
+    public KnifeController primaryWeapon;
 
     //References
     Rigidbody2D rb;
@@ -24,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         lastMovedVector = new Vector2(1, 0f);
+        primaryWeapon = GetComponentInChildren<KnifeController>();
     }
 
     // Update is called once per frame
@@ -56,6 +58,13 @@ public class PlayerMovement : MonoBehaviour
         {
             lastMovedVector = new Vector2(lastHorizontalVector, lastVerticalVector);
         }
+
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetMouseButton(0))
+        {
+            primaryWeapon.Attack(mousePosition);
+        }
+
     }
     void Move()
     {
