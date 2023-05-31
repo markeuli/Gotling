@@ -25,5 +25,13 @@ public class WeaponScriptableObject : ScriptableObject
     int pierce;
     public int Pierce { get => pierce; private set => pierce = value; }
 
+    [SerializeField]
+    float startupDelay;
+    public float StartupDelay { get => startupDelay; private set => startupDelay = value; }
+
+    [SerializeField]
+    float endingDelay;
+    public float EndingDelay { get => endingDelay; private set => endingDelay = value; }
+
 
 }

@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2837f0dc34ce2bf41add75fa3df4756b, type: 3}
-  m_Name: slime-1
+  m_Script: {fileID: 11500000, guid: 676e0cd5147af9943ad6b220a578bcee, type: 3}
+  m_Name: SlimeSlap Weapon
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  maxHealth: 10
-  damage: 5
-  range: 0.5
+  prefab: {fileID: 1604385683651038805, guid: cba48d2d41eed4e4ab555bcfb18459f7, type: 3}
+  damage: 1
+  speed: 0.2
+  cooldownDuration: 1
+  pierce: 999
+  startupDelay: 0.5
+  endingDelay: 0.5

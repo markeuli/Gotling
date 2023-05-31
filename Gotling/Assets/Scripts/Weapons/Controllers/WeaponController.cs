@@ -6,8 +6,11 @@ public abstract class WeaponController : MonoBehaviour
 
 {
     public WeaponScriptableObject weaponData;
+    public Team team = Team.Player;
     float currentCooldown = 0;
     protected PlayerMovement pm;
+
+    public float totalWeaponDelay { get { return weaponData.StartupDelay + weaponData.EndingDelay; } }
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -24,7 +27,7 @@ public abstract class WeaponController : MonoBehaviour
     }
 
     // Put the attack on cooldown
-    public virtual bool Attack(Vector2 playerMouse)
+    public virtual bool Attack(Vector2 direction)
     {
         if (Time.time >= currentCooldown)
         {

@@ -6,11 +6,15 @@ public class PlayerController : MonoBehaviour
 {
 	private PlayerMovement movement;
 	public PlayerWeaponManager weapons;
+	private DamageableObject damage;
 
 	private void Start()
 	{
 		movement = GetComponent<PlayerMovement>();
 		weapons = GetComponent<PlayerWeaponManager>();
+		damage = GetComponent<DamageableObject>();
+
+		damage.OnDeath += () => Debug.Log("Player dead");
 	}
 
 	private void Update()
