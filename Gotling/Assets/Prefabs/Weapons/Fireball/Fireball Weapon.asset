@@ -17,3 +17,5 @@ MonoBehaviour:
   speed: 10
   cooldownDuration: 0.5
   pierce: 1
+  startupDelay: 0
+  endingDelay: 0

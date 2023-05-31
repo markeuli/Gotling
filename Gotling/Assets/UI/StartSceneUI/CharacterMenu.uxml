@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StartSceneUI/StartMenuUI.uss?fileID=7433441132597879392&amp;guid=0f94ab570ca04b24ea07934f5b793413&amp;type=3#StartMenuUI" />
+    <ui:VisualElement name="Wrapper">
+        <ui:ScrollView>
+            <ui:Button text="Robin" display-tooltip-when-elided="true" name="Robin" class="menu-button" />
+            <ui:Button text="that&apos;s all of &apos;em" display-tooltip-when-elided="true" name="null" class="menu-button" />
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="BackButton" class="menu-button" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

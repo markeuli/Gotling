@@ -1,6 +1,8 @@
 .menu-button:hover {
     font-size: 40px;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
+    rotate: 10deg;
+    transition-duration: 0.3s;
 }
 
 .menu-button {
@@ -11,5 +13,5 @@
     border-right-color: rgba(56, 56, 56, 0);
     border-top-color: rgba(56, 56, 56, 0);
     border-bottom-color: rgba(56, 56, 56, 0);
-    color: rgba(188, 188, 188, 255);
+    color: rgb(188, 188, 188);
 }
