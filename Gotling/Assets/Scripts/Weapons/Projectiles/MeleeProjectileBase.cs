@@ -2,44 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class MeleeProjectileBase : MonoBehaviour
+public abstract class MeleeProjectileBase : ProjectileBase
 {
-    public WeaponScriptableObject weaponData;
-    public float destroyAfterSeconds;
-
-    //current stats
-    protected float currentDamage;
-    protected float currentSpeed;
-    protected float currentCooldownDuration;
-    protected int currentPierce;
-
-    void Awake()
-    {
-        currentDamage = weaponData.Damage;
-        currentSpeed = weaponData.Speed;
-        currentCooldownDuration = weaponData.CooldownDuration;
-        currentPierce = weaponData.Pierce;
-    }
-
-    // Update is called once per frame
-    protected virtual void Start()
-    {
-        Destroy(gameObject, destroyAfterSeconds);
-    }
-
     protected virtual void OnTriggerEnter2D(Collider2D col)
-    { 
-        if (col.CompareTag("Enemy"))
+    {
+        Debug.Log("finding ouch");
+        var obj = col.GetComponent<DamageableObject>();
+        if (obj != null)
         {
-            EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(currentDamage);
+            Debug.Log("doing ouch");
+            obj.TakeDamage(currentDamage);
         }
-        else if (col.CompareTag("Prop"))
-        {
-            if (col.gameObject.TryGetComponent(out BreakableProps breakable))
-            {
-                breakable.TakeDamage(currentDamage);
-            }
-        }
+    }
+
+    public override void SetupProjectile(Vector3 dir, Team team = Team.Player)
+    {
+        base.SetupProjectile(dir, team);
+        body.velocity = direction * weaponData.Speed;
     }
 }

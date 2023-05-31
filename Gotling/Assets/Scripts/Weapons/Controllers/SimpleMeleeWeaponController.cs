@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LinearWeaponController : WeaponController
+public class SimpleMeleeWeaponController : WeaponController
 {
     // Start is called before the first frame update
     protected override void Start()
@@ -15,10 +15,9 @@ public class LinearWeaponController : WeaponController
         bool result = base.Attack(direction);
         if (result)
         {
-            var mouseVector = (direction - (Vector2)transform.position).normalized;
-            GameObject spawnedKnife = Instantiate(weaponData.Prefab);
-            spawnedKnife.transform.position = transform.position;
-            spawnedKnife.GetComponent<RangedProjectileBase>().SetupProjectile(mouseVector);
+            var directionVector = (direction - (Vector2)transform.position).normalized;
+            GameObject proj = Instantiate<GameObject>(weaponData.Prefab, transform.position, transform.rotation, transform.parent);
+            proj.GetComponent<SimpleMeleeProjectile>().SetupProjectile(directionVector, team);
         }
         return result;
     }

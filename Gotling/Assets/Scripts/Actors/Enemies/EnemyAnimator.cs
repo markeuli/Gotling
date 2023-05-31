@@ -6,6 +6,7 @@ public class EnemyAnimator : MonoBehaviour
 {
     Animator am;
     EnemyMovement em;
+    EnemyAttackController at;
     SpriteRenderer sr;
 
 
@@ -14,6 +15,7 @@ public class EnemyAnimator : MonoBehaviour
     {
         am = GetComponent<Animator>();
         em = GetComponent<EnemyMovement>();
+        at = GetComponent<EnemyAttackController>();
         sr = GetComponent<SpriteRenderer>();
 
     }
@@ -22,7 +24,8 @@ public class EnemyAnimator : MonoBehaviour
     void Update()
     {
         //Note: Does not allow for turning atm. Must add direction checker
-        if (em.isMoving) { am.SetBool("Move", true); }
+        if (at.isAttacking) { am.SetBool("Attack", true);  }
+        else if (em.isMoving) { am.SetBool("Move", true); }
         else { am.SetBool("Move", false); }
     }
 

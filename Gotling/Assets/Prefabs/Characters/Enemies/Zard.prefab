@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2555537670148301664}
   - component: {fileID: -8450412868154550021}
   - component: {fileID: 2573338987684102852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Zard
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8caa5f6ada6efa74887483dfcb2cc142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: a1ae976a972017340b78c37ff0b1472d, type: 2}
 --- !u!114 &2555537670148301664
 MonoBehaviour:
   m_ObjectHideFlags: 0

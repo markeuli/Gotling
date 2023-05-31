@@ -11,8 +11,10 @@ public class PlayerLoader : MonoBehaviour
         CharacterSelector.instance.DestroySingleton();
 
         var weapons = GetComponent<PlayerWeaponManager>();
-
         weapons.SetPrimary(characterData.StartingWeapon);
+
+        var damage = GetComponent<DamageableObject>();
+        damage.SetMaximum(characterData.MaxHealth, true);
 
         Destroy(this);
     }
