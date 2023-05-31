@@ -1,0 +1,15 @@
+.menu-button:hover {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 255);
+}
+
+.menu-button {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 35px;
+    -unity-font: url('project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&guid=e3265ab4bf004d28a9537516768c1c75&type=3#LiberationSans');
+    border-left-color: rgba(56, 56, 56, 0);
+    border-right-color: rgba(56, 56, 56, 0);
+    border-top-color: rgba(56, 56, 56, 0);
+    border-bottom-color: rgba(56, 56, 56, 0);
+    color: rgba(188, 188, 188, 255);
+}
