@@ -29,27 +29,30 @@ public class PlayerController : MonoBehaviour
 
 		movement.Move(new Vector2(moveX, moveY).normalized);
 
-		// Fire weapon if hit
-		if (fire1)
+		if (!PauseController.isPaused)
 		{
-			if (weapons.primary != null)
+			// Fire weapon if hit
+			if (fire1)
 			{
-				weapons.primary.Attack(mousePosition);
+				if (weapons.primary != null)
+				{
+					weapons.primary.Attack(mousePosition);
+				}
 			}
-		}
 
-		// Fire weapon if hit
-		if (fire2)
-		{
-			if (weapons.secondary != null)
+			// Fire weapon if hit
+			if (fire2)
 			{
-				weapons.secondary.Attack(mousePosition);
+				if (weapons.secondary != null)
+				{
+					weapons.secondary.Attack(mousePosition);
+				}
 			}
 		}
 
 		if (Input.GetKeyDown(KeyCode.P))
 		{
-			_pauseController.TogglePause();
+			_pauseController.TogglePause("PlayerPause");
 		}
 	}
 }

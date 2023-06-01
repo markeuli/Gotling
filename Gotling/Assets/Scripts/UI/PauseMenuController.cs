@@ -40,13 +40,13 @@ public class PauseMenuController : MonoBehaviour
     {
         
         _sceneController.SceneChange("Start");
-        _pauseController.TogglePause();
+        _pauseController.TogglePause("PlayerPause");
         Debug.Log("Main menu button clicked");
     }
 
     private void ResumeButtonOnClicked()
     {
-        _pauseController.TogglePause();
+        _pauseController.TogglePause("PlayerPause");
     }
 
     public void displayPauseMenu(bool b)
