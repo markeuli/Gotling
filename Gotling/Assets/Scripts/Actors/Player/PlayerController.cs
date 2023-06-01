@@ -7,12 +7,14 @@ public class PlayerController : MonoBehaviour
 	private PlayerMovement movement;
 	public PlayerWeaponManager weapons;
 	private DamageableObject damage;
+	public PauseController _pauseController;
 
 	private void Start()
 	{
 		movement = GetComponent<PlayerMovement>();
 		weapons = GetComponent<PlayerWeaponManager>();
 		damage = GetComponent<DamageableObject>();
+		_pauseController = GameObject.Find("PauseController").GetComponent<PauseController>();
 
 		damage.OnDeath += () => Debug.Log("Player dead");
 	}
@@ -43,6 +45,11 @@ public class PlayerController : MonoBehaviour
 			{
 				weapons.secondary.Attack(mousePosition);
 			}
+		}
+
+		if (Input.GetKeyDown(KeyCode.P))
+		{
+			_pauseController.TogglePause();
 		}
 	}
 }

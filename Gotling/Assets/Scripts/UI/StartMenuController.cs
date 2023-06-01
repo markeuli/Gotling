@@ -102,28 +102,14 @@ public class StartMenuController : MonoBehaviour
         AudioListener.volume = _muted ? 0 : 1;
     }
 
-    //delete when play button works ;)
-    /*private void PlayButtonOnClicked()
-    {
-        // FIX LATER: For now, takes you to Ben's scene where you choose starting character
-        // Later, this will be a dynamic section similar to the OptionButtonOnClicked()
-        _sceneController.SceneChange("Menu");
-    }*/
-
     private void ExitButtonOnClicked()
     {
         Debug.Log("Exit button clicked.");
         Application.Quit();
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //void Start(){}
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //void Update() {}
 }

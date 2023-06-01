@@ -8,10 +8,12 @@
 .menu-button {
     background-color: rgba(0, 0, 0, 0);
     font-size: 35px;
-    -unity-font: url('project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&guid=e3265ab4bf004d28a9537516768c1c75&type=3#LiberationSans');
+    -unity-font: url('project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=e971e9fc3da179447810080af05d15b5&type=3#NotInter-Regular');
     border-left-color: rgba(56, 56, 56, 0);
     border-right-color: rgba(56, 56, 56, 0);
     border-top-color: rgba(56, 56, 56, 0);
     border-bottom-color: rgba(56, 56, 56, 0);
     color: rgb(188, 188, 188);
+    justify-content: flex-start;
+    -unity-font-definition: none;
 }
