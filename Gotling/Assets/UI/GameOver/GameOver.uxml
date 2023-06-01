@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Start/StartMenuUI.uss?fileID=7433441132597879392&amp;guid=0f94ab570ca04b24ea07934f5b793413&amp;type=3#StartMenuUI" />
+    <ui:VisualElement name="screen" style="flex-direction: row; flex-grow: 1;">
+        <ui:VisualElement name="LeftSection" style="flex-grow: 1; width: 25%; height: auto; background-color: rgba(0, 0, 0, 0.45); align-items: center; justify-content: center;">
+            <ui:VisualElement name="GameOverLogo" style="background-image: url(&apos;project://database/Assets/Art/Sprites/game-over-logo.png?fileID=2800000&amp;guid=e9d458dd4fd03804fbc9947e665eda8b&amp;type=3#game-over-logo&apos;); flex-grow: 1; -unity-background-scale-mode: scale-to-fit; width: 75%; align-items: center; justify-content: center;" />
+            <ui:VisualElement name="Buttons" style="flex-grow: 1; justify-content: center; align-items: center; margin-bottom: 25%;">
+                <ui:Button text="Main Menu" display-tooltip-when-elided="true" name="MainMenuButton" class="menu-button" style="flex-grow: 0; align-items: center; justify-content: center;" />
+                <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="menu-button" style="flex-grow: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightSection" style="flex-grow: 1; width: 55%;" />
+    </ui:VisualElement>
+</ui:UXML>

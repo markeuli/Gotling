@@ -98,6 +98,7 @@ public class PlayerStats : MonoBehaviour
 
             invincibilityTimer = invincibilityDuration;
             isInvincible = true;
+            Debug.Log("FRICK");
 
             if(currentHealth <= 0)
             {

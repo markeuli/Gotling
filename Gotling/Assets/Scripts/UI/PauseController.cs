@@ -8,13 +8,14 @@ public class PauseController : MonoBehaviour
     private float previousTimeScale;
     //each of the references to menu controllers requiring to pauses will be dragged into here from the unity editor
     public PauseMenuController _pauseMenuController;
+    public GameOverMenu _gameOverMenu;
 
 
     // Start is called before the first frame update
     void Start()
     {
         isPaused = false;
-        _pauseMenuController.displayPauseMenu(false);
+        ClearMenus();
     }
 
     // Update is called once per frame
@@ -50,6 +51,7 @@ public class PauseController : MonoBehaviour
                 _pauseMenuController.displayPauseMenu(b);
                 break;
             case "PlayerDeath":
+                _gameOverMenu.displayGameOverMenu(b);
                 break;
             case "PlayerDecision":
                 Debug.Log("Player Decision Menu not implemented! Get on that.");
@@ -61,5 +63,11 @@ public class PauseController : MonoBehaviour
                 Debug.Log("Incorrect menu option in TogglePause call");
                 break;
         }
+    }
+
+    public void ClearMenus()
+    {
+        _pauseMenuController.displayPauseMenu(false);
+        _gameOverMenu.displayGameOverMenu(false);
     }
 }
