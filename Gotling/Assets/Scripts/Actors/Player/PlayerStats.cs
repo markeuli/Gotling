@@ -89,27 +89,7 @@ public class PlayerStats : MonoBehaviour
             experienceCap += experienceCapIncrease;
         }
     }
-    public void TakeDamage(float dmg)
-    {
-        //MAking sure there arent in i-frames
-        if(!isInvincible)
-        {
-            currentHealth -= dmg;
-
-            invincibilityTimer = invincibilityDuration;
-            isInvincible = true;
-            Debug.Log("FRICK");
-
-            if(currentHealth <= 0)
-            {
-                Kill();
-            }
-        }
-    }
-    public void Kill()
-    {
-        Debug.Log("PLAYER IS DEAD");
-    }
+    
 
     public void RestoreHealth(float amount)
     {

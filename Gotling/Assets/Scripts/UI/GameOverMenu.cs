@@ -35,9 +35,8 @@ public class GameOverMenu : MonoBehaviour
 
     private void MainMenuButtonOnClicked()
     {
-
+        _pauseController.TogglePause("PlayerDeath");
         _sceneController.SceneChange("Start");
-        _pauseController.TogglePause("PlayerPause");
         Debug.Log("Main menu button clicked");
     }
 

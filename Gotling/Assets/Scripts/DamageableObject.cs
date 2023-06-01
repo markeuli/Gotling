@@ -19,6 +19,7 @@ public class DamageableObject : MonoBehaviour
 		{
 			_currentHp = value;
 			CheckCurrent();
+			Debug.Log("Current Hp of this damageable object is" + _currentHp);
 		}
 	}
 
@@ -63,6 +64,7 @@ public class DamageableObject : MonoBehaviour
 	public void TakeDamage(float damage)
 	{
 		currentHp -= damage;
+		Debug.Log("Damageable object taking damage.");
 	}
 
 	public void Heal(float health)

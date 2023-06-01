@@ -16,7 +16,11 @@ public class PlayerController : MonoBehaviour
 		damage = GetComponent<DamageableObject>();
 		_pauseController = GameObject.Find("PauseController").GetComponent<PauseController>();
 
-		damage.OnDeath += () => Debug.Log("Player dead");
+		damage.OnDeath += () =>
+		{
+			Debug.Log("Player is Dead");
+			_pauseController.TogglePause("PlayerDeath");
+		};
 	}
 
 	private void Update()
