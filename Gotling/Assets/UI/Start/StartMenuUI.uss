@@ -8,7 +8,7 @@
 .menu-button {
     background-color: rgba(0, 0, 0, 0);
     font-size: 35px;
-    -unity-font: url('project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=e971e9fc3da179447810080af05d15b5&type=3#NotInter-Regular');
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
     border-left-color: rgba(56, 56, 56, 0);
     border-right-color: rgba(56, 56, 56, 0);
     border-top-color: rgba(56, 56, 56, 0);
