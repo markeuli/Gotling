@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: 2109045915281768722}
   - component: {fileID: -7060283644405354503}
   - component: {fileID: 7355444872210651146}
-  - component: {fileID: 4056083872271608805}
+  - component: {fileID: -7768356201017666378}
+  - component: {fileID: 4222139048497194448}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -127,17 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8c495bc3a945e47b8468c69d5ba593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  experience: 0
-  level: 1
-  experienceCap: 0
-  invincibilityDuration: 0.5
-  levelRanges:
-  - startLevel: 1
-    endLevel: 3
-    experienceCapIncrease: 100
-  - startLevel: 4
-    endLevel: 5
-    experienceCapIncrease: 200
 --- !u!114 &2109045915281768722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons: {fileID: 0}
+  _pauseController: {fileID: 0}
 --- !u!114 &7355444872210651146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693210c2bb4385d4587a58f59280433b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4056083872271608805
+--- !u!114 &-7768356201017666378
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +175,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2109045915281768810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bf3cda68ab4a94a9ff0b66de866068, type: 3}
+  m_Script: {fileID: 11500000, guid: 91758c1bcb4c5ea4ca05144f2ff99232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4222139048497194448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109045915281768810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc84c16c61adf3a4da4e334c9cde1f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4830130703732272030

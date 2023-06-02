@@ -61,10 +61,9 @@ public class DamageableObject : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage(float damage)
+	public virtual void TakeDamage(float damage, GameObject source = null)
 	{
 		currentHp -= damage;
-		Debug.Log("Damageable object taking damage.");
 	}
 
 	public void Heal(float health)

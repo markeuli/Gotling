@@ -6,12 +6,10 @@ public abstract class MeleeProjectileBase : ProjectileBase
 {
     protected virtual void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("finding ouch");
         var obj = col.GetComponent<DamageableObject>();
         if (obj != null)
         {
-            Debug.Log("doing ouch");
-            obj.TakeDamage(currentDamage);
+            obj.TakeDamage(currentDamage, gameObject.transform.parent.gameObject);
         }
     }
 
