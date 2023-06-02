@@ -347,25 +347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7c8e689d427314294b353c638eb5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 10
-  spawnTable:
-  - enemies:
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-  - enemies:
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 5038765311810056849, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
-  - enemies:
-    - {fileID: 5038765311810056849, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
-  - enemies:
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
-    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+  distance: 12
+  spawnTable: {fileID: 11400000, guid: c89f1b017d6564245b073fc63ec6bb79, type: 2}
 --- !u!4 &339183935
 Transform:
   m_ObjectHideFlags: 0

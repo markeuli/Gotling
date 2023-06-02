@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
     private List<GameObject> enemies;
 
     [SerializeField]
-    public List<SpawnGroup> spawnTable;
+    public EnemySpawnTableScriptableObject spawnTable;
 
     private float difficulty;
 
@@ -58,12 +58,5 @@ public class EnemySpawner : MonoBehaviour
         // TODO make difficulty scalor equation or table
         stats.SetStartingLevel(difficulty);
         enemies.Add(instance);
-	}
-
-    [System.Serializable]
-    public class SpawnGroup
-	{
-        [SerializeField]
-        public GameObject[] enemies;
 	}
 }
