@@ -19,7 +19,6 @@ public class DamageableObject : MonoBehaviour
 		{
 			_currentHp = value;
 			CheckCurrent();
-			Debug.Log("Current Hp of this damageable object is" + _currentHp);
 		}
 	}
 

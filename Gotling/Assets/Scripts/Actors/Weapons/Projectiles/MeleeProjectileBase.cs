@@ -16,6 +16,5 @@ public abstract class MeleeProjectileBase : ProjectileBase
     public override void SetupProjectile(Vector3 dir, Team team = Team.Player)
     {
         base.SetupProjectile(dir, team);
-        body.velocity = direction * weaponData.Speed;
     }
 }
