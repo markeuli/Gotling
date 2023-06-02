@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802b9913c8c5eb841b22aaa8453893a5, type: 3}
+  m_Name: EnemySpawnTable
+  m_EditorClassIdentifier: 
+  spawnGroups:
+  - enemies:
+    - {fileID: 5038765311810056849, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+  - enemies:
+    - {fileID: 5038765311810056849, guid: 8ac2829e09abdb54180c5f16fbc923ff, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+  - enemies:
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+  - enemies:
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+  - enemies:
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+  - enemies:
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+  - enemies:
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}
+    - {fileID: 7888423683647556393, guid: ac04b6e40607c3d4b85328f2169b110a, type: 3}

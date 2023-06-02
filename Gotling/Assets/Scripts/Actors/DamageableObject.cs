@@ -19,7 +19,6 @@ public class DamageableObject : MonoBehaviour
 		{
 			_currentHp = value;
 			CheckCurrent();
-			Debug.Log("Current Hp of this damageable object is" + _currentHp);
 		}
 	}
 
@@ -61,10 +60,9 @@ public class DamageableObject : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage(float damage)
+	public virtual void TakeDamage(float damage, GameObject source = null)
 	{
 		currentHp -= damage;
-		Debug.Log("Damageable object taking damage.");
 	}
 
 	public void Heal(float health)
@@ -77,6 +75,10 @@ public class DamageableObject : MonoBehaviour
 		var gained = Mathf.Max(maximum - _maximumHp, 0);
 		_maximumHp = maximum;
 		_currentHp += gained;
+		if (_currentHp > 0)
+		{
+			isAlive = true;
+		}
 	}
 
 }

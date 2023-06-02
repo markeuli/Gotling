@@ -14,10 +14,5 @@ public class EnemyStats : MonoBehaviour
     {
         currentMoveSpeed = enemyData.MoveSpeed;
         currentDamage = enemyData.Damage;
-    }
-
-    // Update is called once per frame
-    
-    
-    
+    }    
 }

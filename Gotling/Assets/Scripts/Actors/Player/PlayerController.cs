@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
 
 		damage.OnDeath += () =>
 		{
-			Debug.Log("Player is Dead");
 			_pauseController.TogglePause("PlayerDeath");
 		};
 	}

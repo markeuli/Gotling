@@ -19,6 +19,7 @@ public class SimpleEnemyController : EnemyControllerBase
 
         if (!isActing) {
             var distance = Vector2.Distance(transform.position, player.transform.position);
+
             if (distance <= data.Range + 0.1f)
             {
                 if (!isActing && !attacks.isAttacking)
