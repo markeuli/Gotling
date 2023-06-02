@@ -18,7 +18,7 @@ public class LinearWeaponController : WeaponController
             var mouseVector = (direction - (Vector2)transform.position).normalized;
             GameObject spawnedKnife = Instantiate(weaponData.Prefab);
             spawnedKnife.transform.position = transform.position;
-            spawnedKnife.GetComponent<RangedProjectileBase>().SetupProjectile(mouseVector);
+            spawnedKnife.GetComponent<RangedProjectileBase>().SetupProjectile(mouseVector, team);
         }
         return result;
     }

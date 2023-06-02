@@ -76,6 +76,10 @@ public class DamageableObject : MonoBehaviour
 		var gained = Mathf.Max(maximum - _maximumHp, 0);
 		_maximumHp = maximum;
 		_currentHp += gained;
+		if (_currentHp > 0)
+		{
+			isAlive = true;
+		}
 	}
 
 }

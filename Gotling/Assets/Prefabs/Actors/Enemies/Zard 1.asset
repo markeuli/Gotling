@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2837f0dc34ce2bf41add75fa3df4756b, type: 3}
   m_Name: Zard 1
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 1
   maxHealth: 10
   damage: 5
+  range: 10
