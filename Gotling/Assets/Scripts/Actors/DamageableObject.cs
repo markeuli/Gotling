@@ -6,6 +6,8 @@ using UnityEngine;
 public class DamageableObject : MonoBehaviour
 {
 	public Action OnDeath;
+	public HealthChangeEvent OnHealthChange;
+	public DamageTakenEvent OnDamageTaken;
 	public bool isAlive { get; private set; }
 
 
@@ -18,8 +20,13 @@ public class DamageableObject : MonoBehaviour
 		}
 		set
 		{
+			var prev = currentHp;
 			_currentHp = value;
 			CheckCurrent();
+			if (OnHealthChange != null && prev != currentHp)
+			{
+				OnHealthChange(currentHp, maximumHp);
+			}
 		}
 	}
 
@@ -32,8 +39,13 @@ public class DamageableObject : MonoBehaviour
 		}
 		set
 		{
+			var prev = _maximumHp;
 			_maximumHp = Mathf.Max(value, 1); // Don't allow max HP below 1
 			CheckCurrent();
+			if (OnHealthChange != null && prev != maximumHp)
+			{
+				OnHealthChange(currentHp, maximumHp);
+			}
 		}
 	}
 
@@ -41,12 +53,22 @@ public class DamageableObject : MonoBehaviour
 
     private void CheckCurrent()
 	{
-		_currentHp = Mathf.Min(_maximumHp, _currentHp); // Don't let HP go above maximum
-		_currentHp = Mathf.Max(0, _currentHp); // Don't let HP fall below 0
+		_currentHp = Mathf.Min(_maximumHp, currentHp); // Don't let HP go above maximum
+		_currentHp = Mathf.Max(0, currentHp); // Don't let HP fall below 0
+	}
+
+	public virtual void TakeDamage(float damage, GameObject source = null)
+	{
+		if (OnDamageTaken != null)
+		{
+			damage = OnDamageTaken(damage, source);
+		}
+
+		currentHp -= damage;
 
 		if (isAlive)
 		{
-			if (_currentHp <= 0)
+			if (currentHp <= 0)
 			{
 				if (OnDeath != null)
 				{
@@ -54,18 +76,14 @@ public class DamageableObject : MonoBehaviour
 				}
 				isAlive = false;
 			}
-		} else
+		}
+		else
 		{
-			if (_currentHp > 0)
+			if (currentHp > 0)
 			{
 				isAlive = true;
 			}
 		}
-	}
-
-	public virtual void TakeDamage(float damage, GameObject source = null)
-	{
-		currentHp -= damage;
 	}
 
 	public void Heal(float health)
@@ -78,10 +96,12 @@ public class DamageableObject : MonoBehaviour
 		var gained = Mathf.Max(maximum - _maximumHp, 0);
 		_maximumHp = maximum;
 		_currentHp += gained;
-		if (_currentHp > 0)
+		if (currentHp > 0)
 		{
 			isAlive = true;
 		}
 	}
 
+	public delegate float DamageTakenEvent(float damage, GameObject source);
+	public delegate void HealthChangeEvent(float health, float max);
 }

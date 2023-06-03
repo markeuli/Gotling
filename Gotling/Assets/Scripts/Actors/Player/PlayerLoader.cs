@@ -10,7 +10,6 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerLoader : MonoBehaviour
 {
-
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,6 +21,9 @@ public class PlayerLoader : MonoBehaviour
 
         var damage = GetComponent<DamageableObject>();
         damage.SetMaximum(characterData.MaxHealth, true);
+
+        var healthbar = GetComponentInChildren<HealthBarController>();
+        damage.OnHealthChange += healthbar.SetHealthbar;
 
         var level = GetComponent<LevelManager>();
         level.SetStartingLevel(1, 100); // TODO remove magic number max level
