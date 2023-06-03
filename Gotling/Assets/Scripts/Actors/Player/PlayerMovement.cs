@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -7,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
 	public Vector2 lastMovedVector { get; private set; }
 	public bool isMoving { get; private set; }
-	public List<TilemapCollider2D> maps;
+	public List<Collider2D> maps;
 	public Collider2D collider2d;
 
 	private Vector2 movDir;
@@ -20,9 +21,10 @@ public class PlayerMovement : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody2D>();
 		collider2d= GetComponent<Collider2D>();
-		maps = new List<TilemapCollider2D>();
+		maps = new List<Collider2D>();
 		lastMovedVector = new Vector2(1, 0f);
-		maps.AddRange(FindObjectsOfType<TilemapCollider2D>());
+		maps.AddRange(FindObjectsOfType<Tilemap>()?.Select(o => o.GetComponent<CompositeCollider2D>()));
+		maps.Remove(null);
 	}
 
 	// Update is called once per frame

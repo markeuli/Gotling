@@ -17,3 +17,10 @@
     justify-content: flex-start;
     -unity-font-definition: none;
 }
+
+.buttons-container {
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    padding-bottom: 20%;
+}
