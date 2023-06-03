@@ -8,6 +8,7 @@ public class DamageableObject : MonoBehaviour
 	public Action OnDeath;
 	public bool isAlive { get; private set; }
 
+
 	private float _currentHp;
 	public float currentHp
 	{
@@ -36,7 +37,9 @@ public class DamageableObject : MonoBehaviour
 		}
 	}
 
-	private void CheckCurrent()
+    
+
+    private void CheckCurrent()
 	{
 		_currentHp = Mathf.Min(_maximumHp, _currentHp); // Don't let HP go above maximum
 		_currentHp = Mathf.Max(0, _currentHp); // Don't let HP fall below 0

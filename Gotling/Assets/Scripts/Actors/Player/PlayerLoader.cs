@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [RequireComponent(typeof(PlayerWeaponManager))]
 [RequireComponent(typeof(DamageableObject))]
 [RequireComponent(typeof(LevelManager))]
@@ -9,6 +10,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 public class PlayerLoader : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Awake()
     {

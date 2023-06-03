@@ -98,6 +98,7 @@ namespace HudElements
         {
             FillHealth();
         }
+
         private void FillHealth()
         {
             if (fillType == FillType.Horizontal)
